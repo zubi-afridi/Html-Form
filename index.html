@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/assests/iiui icon.png" />
+    <title>University Feedback</title>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <div align="center">
+        <img
+          src="/assests/iiui.png"
+          alt="IIUI logo"
+          style="max-width: 80%; height: auto"
+        />
+        <h1>University Feedback Form</h1>
+      </div>
+    </header>
+
+    <main>
+      <!-- Feedback Form -->
+      <form action="/thank-you.html">
+        <!-- Personal Information Section -->
+        <section>
+          <fieldset>
+            <legend><h2>Personal Info</h2></legend>
+            <label for="fullname"><b>Full Name: *</b></label>
+            <input
+              type="text"
+              id="fullname"
+              name="fullname"
+              placeholder="Enter Student Name"
+              required
+              style="width: 100%; max-width: 500px"
+            /><br /><br />
+            <label for="email"><b>Email: *</b></label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter official mail"
+              required
+              style="width: 100%; max-width: 500px"
+            /><br /><br />
+            <label for="GYear"><b>Graduation Year: *</b></label>
+            <input
+              type="number"
+              id="GYear"
+              name="GYear"
+              min="1900"
+              max="2099"
+              step="1"
+              value="2016"
+              required
+              style="width: 100%; max-width: 500px"
+            /><br /><br />
+            <label for="DProgram"><b>Degree Program: *</b></label>
+            <select
+              name="DProgram"
+              id="DProgram"
+              required
+              style="width: 100%; max-width: 500px"
+            >
+              <option value="" disabled selected>--Select Degree--</option>
+              <option value="CS">Computer Science</option>
+              <option value="SE">Software Engineering</option>
+              <option value="IT">Information Technology</option>
+              <option value="AI">Artificial Intelligence</option>
+              <option value="Cyber">Cyber Security</option>
+            </select>
+            <br /><br />
+          </fieldset>
+        </section>
+
+        <!-- University Experience Section -->
+        <section>
+          <fieldset>
+            <legend><h2>University Experience</h2></legend>
+            <b><p>Overall Satisfaction: *</p></b>
+            <input
+              type="radio"
+              id="Very-Satisfied"
+              name="Satisfaction"
+              value="Very-Satisfied"
+              required
+            />
+            <label for="Very-Satisfied">Very Satisfied</label>
+            <input
+              type="radio"
+              id="Satisfied"
+              name="Satisfaction"
+              value="Satisfied"
+              required
+            />
+            <label for="Satisfied">Satisfied</label>
+            <input
+              type="radio"
+              id="Neutral"
+              name="Satisfaction"
+              value="Neutral"
+              required
+            />
+            <label for="Neutral">Neutral</label>
+            <input
+              type="radio"
+              id="Dissatisfied"
+              name="Satisfaction"
+              value="Dissatisfied"
+              required
+            />
+            <label for="Dissatisfied">Dissatisfied</label>
+            <input
+              type="radio"
+              id="Very-Dissatisfied"
+              name="Satisfaction"
+              value="Very-Dissatisfied"
+              required
+            />
+            <label for="Very-Dissatisfied">Very Dissatisfied</label>
+            <br /><br />
+            <b><p>Quality of Teaching: *</p></b>
+            <input
+              type="radio"
+              id="Excellent"
+              name="Quality-Teaching"
+              value="Excellent"
+              required
+            />
+            <label for="Excellent">Excellent</label>
+            <input
+              type="radio"
+              id="Good"
+              name="Quality-Teaching"
+              value="Good"
+              required
+            />
+            <label for="Good">Good</label>
+            <input
+              type="radio"
+              id="Fair"
+              name="Quality-Teaching"
+              value="Fair"
+              required
+            />
+            <label for="Fair">Fair</label>
+            <input
+              type="radio"
+              id="Poor"
+              name="Quality-Teaching"
+              value="Poor"
+              required
+            />
+            <label for="Poor">Poor</label>
+            <br /><br />
+            <b><p>Campus Facilities:</p></b>
+            <input
+              type="checkbox"
+              id="Library"
+              name="Campus-Facilities"
+              value="Library"
+            />
+            <label for="Library">Library</label>
+            <input
+              type="checkbox"
+              id="Labs"
+              name="Campus-Facilities"
+              value="Labs"
+            />
+            <label for="Labs">Labs</label>
+            <input
+              type="checkbox"
+              id="Classrooms"
+              name="Campus-Facilities"
+              value="Classrooms"
+            />
+            <label for="Classrooms">Classrooms</label>
+            <input
+              type="checkbox"
+              id="Sports-Facilities"
+              name="Campus-Facilities"
+              value="Sports-Facilities"
+            />
+            <label for="Sports-Facilities">Sports Facilities</label>
+            <input
+              type="checkbox"
+              id="Cafeteria"
+              name="Campus-Facilities"
+              value="Cafeteria"
+            />
+            <label for="Cafeteria">Cafeteria</label>
+            <input
+              type="checkbox"
+              id="Others"
+              name="Campus-Facilities"
+              value="Others"
+            />
+            <label for="Others">Others</label>
+            <br /><br />
+            <label for="Extracurricular-Activities">
+              <b>Extracurricular Activities:</b> (optional)
+            </label>
+            <br />
+            <textarea
+              name="Extracurricular-Activities"
+              id="Extracurricular-Activities"
+              rows="5"
+              placeholder="Describe your experience with extracurricular activities."
+              style="width: 100%; max-width: 500px"
+            ></textarea>
+            <br /><br />
+          </fieldset>
+        </section>
+
+        <!-- Suggestions Section -->
+        <section>
+          <fieldset>
+            <legend><h2>Suggestions Section</h2></legend>
+            <label for="Strength"><b>University Strength:</b></label>
+            <br /><br />
+            <textarea
+              name="Strength"
+              id="Strength"
+              placeholder="Describe the university's strongest qualities (e.g., faculty, facilities, curriculum)."
+              rows="5"
+              style="width: 100%; max-width: 500px"
+            ></textarea>
+            <br /><br />
+            <label for="Improvement"><b>Areas for Improvement:</b></label>
+            <br /><br />
+            <textarea
+              name="Improvement"
+              id="Improvement"
+              placeholder="Describe specific areas where you feel you could improve or need further development."
+              rows="5"
+              style="width: 100%; max-width: 500px"
+            ></textarea>
+            <br /><br />
+            <label for="Feedback"><b>Any Additional Feedback:</b></label>
+            <br /><br />
+            <textarea
+              name="Feedback"
+              id="Feedback"
+              placeholder="Provide any other comments, suggestions, or feedback you have."
+              rows="5"
+              style="width: 100%; max-width: 500px"
+            ></textarea>
+            <br /><br />
+          </fieldset>
+        </section>
+        <br /><br />
+        <!-- Form Actions -->
+        <div align="center">
+          <button type="submit">Submit Form</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+      <div align="center">
+        <p>
+          <b>Privacy Statement:</b> Your feedback is important to us. Please be
+          assured that all responses provided in this survey will remain
+          confidential and will only be used for the purpose of improving
+          university services and programs. Your personal information will not
+          be shared or disclosed to any third parties.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
